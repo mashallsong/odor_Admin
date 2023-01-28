@@ -216,6 +216,42 @@
     justify-content: space-between;
 }
 
+.realtimeTableTh {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: #130c0e;
+    background-color: #F5F6FF;
+}
+
+.realtimeTableTd {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F5F6FF;
+}
+
+.settingLayoutBody2 {
+    padding: 0 16px;
+}
+
+.settingLayoutBody2 > ul {
+    width: 100%;
+}
+
+.settingLayoutBody2 > ul:hover {
+    background-color: #F4F5FE;
+}
+
+.settingLayoutBody2 > ul > li {
+    width: 25%;
+    text-align: center;
+    color: #151426;
+}
+
+.idText {
+    color: #4e82eb;
+}
 
 
 /* Management BODY */

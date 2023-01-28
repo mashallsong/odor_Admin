@@ -14,15 +14,15 @@ import FormLabel from '@mui/material/FormLabel';
 import {faMagnifyingGlass, faWrench} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+import Checkbox from '@mui/material/Checkbox';
+
+const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
 export default function AdminSetting(){
     return (
         <div className="container">
             <div className="header-wrap">
-                <h1>설정</h1>
-                <div className="input-seach">
-                    <input type="text" id="Seach" name="검색" placeholder="검색어를 입력해주세요."/>
-                    <FontAwesomeIcon className="seach-icon" icon={faMagnifyingGlass} />
-                </div>
+                <h1>관리자 설정</h1>
                 <div className="info-wrap">
                     <div className="info-id">
                         <span>User Name</span>
@@ -39,6 +39,25 @@ export default function AdminSetting(){
                     <div className="setting-layout-1">
                         <div className="setting-layout-header">
                             <h3>관리자 리스트</h3> <span>Administrator List</span>
+                        </div>
+                        <div className="settingLayoutBody2">
+                            <ul className="realtimeTableTh">
+                                <li>선택</li>
+                                <li>관리자명</li>
+                                <li>아이디</li>
+                                <li>관리등급</li>
+                            </ul>
+                            <ul className="realtimeTableTd">
+                                <li>
+                                    <Checkbox
+                                        {...label}
+                                        sx={{ '& .MuiSvgIcon-root': { fontSize: 28 } }}
+                                    />
+                                </li>
+                                <li>홍길동</li>
+                                <li className="idText">aaaabc123@gmail.com</li>
+                                <li>최고 관리자</li>
+                            </ul>
                         </div>
                     </div>
                     <div className="setting-layout-2">
