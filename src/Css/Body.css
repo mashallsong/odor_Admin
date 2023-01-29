@@ -1,6 +1,6 @@
 /* Login BODY */
 .container{
-    height: 100vh;
+    
 }
 
 .body-wrap-login {
@@ -148,7 +148,7 @@
 }
 
 .textInput1 {
-    width: 75%;
+    width: 70%;
     border: 1px solid #E3E3E3;
     border-radius: 8px;
     padding: 12px 16px;
@@ -167,7 +167,7 @@
 }
 
 .textInput2 {
-    width: 75%;
+    width: 70%;
     border: none;
     border-radius: 8px;
     padding: 12px 16px;
@@ -176,7 +176,7 @@
 }
 
 .textInput3 {
-    width: 75%;
+    width: 70%;
     border: 1px solid #E3E3E3;
     border-radius: 8px;
     padding: 12px 16px;
@@ -188,7 +188,7 @@
 }
 
 .textInput4 {
-    width: 75%;
+    width: 70%;
     border: 1px solid #E3E3E3;
     border-radius: 8px;
     padding: 12px 16px;
@@ -273,20 +273,23 @@
     border-radius: 16px;
 }
 
+.sensor {
+
+}
 
 
 
 
 /* Management BODY */
 .bodyRegistration {
-
+    
 }
 
 .RegistrationGrop1 {
     padding: 16px 32px 32px 32px;
     display: flex;
     min-width: 1000px;
-    height: 960px;
+    height: 100%;
 }
 
 .RegistrationLayout {
@@ -295,3 +298,104 @@
     background-color: white;
     border-radius: 16px;
 }
+
+.sensorWrap2 {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    margin-top: 8px;
+}
+
+.sensor {
+    padding: 12px 32px;
+    border-radius: 8px;
+    background-color: #151426;
+    margin-left: 16px;
+    color: white;
+    width: 15%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.textInput5 {
+    width: 400px;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin: 0 16px;
+}
+
+.textInput5:focus-within {
+    border: 2px solid #4e82eb;
+}
+
+.textInput6 {
+    width: 20px;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin: 0 16px;
+}
+
+.textInput6:focus-within {
+    border: 2px solid #4e82eb;
+}
+
+.textInput7 {
+    width: 400px;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin: 0 16px;
+}
+
+.textInput7:focus-within {
+    border: 2px solid #4e82eb;
+}
+
+.textInput7::placeholder {
+    color: #dadada;
+}
+
+.textInputListFull {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+}
+
+.textInputListFull2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 8px 32px;
+    margin-top: 32px;
+}
+
+.ListTitle {
+    width: 10%;
+}
+
+.subListText {
+    padding: 12px 0;
+    border-radius: 8px;
+    background-color: white;
+    margin: 0 32px 0 16px;
+    text-align: left;
+    vertical-align: middle;
+    width: 20%;
+}
+
+.subListText2 {
+    padding: 12px 0;
+    border-radius: 8px;
+    background-color: white;
+    margin: 0 16px 0 16px;
+    text-align: left;
+    vertical-align: middle;
+    width: 20%;
+}
+
