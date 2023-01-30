@@ -39,16 +39,6 @@ export default function Management(){
                             variant="outlined" href="/RegistrationUser">
                             사용자관리
                     </Button>
-                    {/* 미선택 시
-                    <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '0px 32px', border: 'none' , color:'white' , marginLeft: '32px' , fontSize: '16px'}} 
-                            variant="outlined" href="Registration">
-                            신규등록
-                    </Button>
-                    <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '0px 32px', border: 'none' , color:'white' , marginLeft: '16px' , fontSize: '16px'}} 
-                            variant="outlined" href="RegistrationUser">
-                            사용자관리
-                    </Button>
-                    */}
                 </div>
                 <div className="info-wrap">
                     <div className="info-id">
