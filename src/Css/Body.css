@@ -444,3 +444,98 @@
     width: 100%;
     height: 400px;
 }
+
+.ManagementTable {
+    padding: 16px 32px;
+}
+
+.ManagementTable ul li {
+    width: 16%;
+    text-align: center;
+}
+
+.ManagementTableTh {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    color: #130c0e;
+    background-color: #F5F6FF;
+}
+
+.ManagementTableTd {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F5F6FF;
+}
+
+.ManagementBtn {
+    padding: 16px 32px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.ManagementUserBody {
+    overflow: scroll;
+    height: 880px;
+}
+
+.textChange > p {
+    text-align: left;
+    padding: 4px 0;
+}
+
+.textChange2 > p {
+    text-align: center;
+    padding: 4px 0;
+}
+
+.textOnline {
+    color: #75C03A;
+}
+
+.textOffline {
+    color: #C63B21;
+}
+
+.textError {
+    color: #E49035;
+}
+
+.textID {
+    color: #4e82eb;
+}
+
+.textAddress {
+    font-size: 14px;
+}
+
+.RegistrationUserTable {
+    padding: 16px 32px 32px 32px;
+}
+
+.RegistrationUserTable ul li {
+    width: 10%;
+    text-align: center;
+}
+
+.RegistrationUserTd {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #F5F6FF;
+}
+
+.RegistrationSerch {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 32px;
+}

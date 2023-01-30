@@ -24,25 +24,14 @@ export default function Registration(){
             <div className="header-wrap">
                 <div className="headerBtn">
                     <h1>장비등록</h1>
-                    {/* 신규등록 */}
                     <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '0px 32px', border: 'none' , color:'white' , marginLeft: '32px' , fontSize: '16px'}} 
-                            variant="outlined">
+                            variant="outlined" href="/Registration">
                             신규등록
                     </Button>
-                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '0px 32px', border: 'none' , color:'white' , marginLeft: '16px' , fontSize: '16px'}} 
-                            variant="outlined">
+                    <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '0px 32px', border: 'none' , color:'white' , marginLeft: '16px' , fontSize: '16px'}} 
+                            variant="outlined" href="/RegistrationUser">
                             사용자관리
                     </Button>
-                    {/* 사용자 관리
-                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '0px 32px', border: 'none' , color:'white' , marginLeft: '32px' , fontSize: '16px'}} 
-                            variant="outlined">
-                            신규등록
-                    </Button>
-                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '0px 32px', border: 'none' , color:'white' , marginLeft: '16px' , fontSize: '16px'}} 
-                            variant="outlined">
-                            사용자관리
-                    </Button>
-                    */}
                 </div>
                 <div className="info-wrap">
                     <div className="info-id">
