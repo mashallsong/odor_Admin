@@ -255,6 +255,7 @@
 
 
 /* Management BODY */
+/* Registration BODY */
 .bodyManagement {
 
 }
@@ -268,7 +269,7 @@
 
 .ManagementLayout {
     width: 100%;
-    height: 100%;
+    height: 960px;
     background-color: white;
     border-radius: 16px;
 }
@@ -277,10 +278,6 @@
 
 }
 
-
-
-
-/* Management BODY */
 .bodyRegistration {
     
 }
@@ -294,9 +291,9 @@
 
 .RegistrationLayout {
     width: 100%;
-    height: 100%;
+    height: 960px;
     background-color: white;
-    border-radius: 16px;
+    border-radius: 16px; 
 }
 
 .sensorWrap2 {
@@ -360,6 +357,23 @@
     color: #dadada;
 }
 
+.textInput8 {
+    width: 320px;
+    border: 1px solid #E3E3E3;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 16px;
+    margin: 0 16px;
+}
+
+.textInput8:focus-within {
+    border: 2px solid #4e82eb;
+}
+
+.textInput8::placeholder {
+    color: #dadada;
+}
+
 .textInputListFull {
     width: 100%;
     display: flex;
@@ -399,3 +413,34 @@
     width: 20%;
 }
 
+.RegistrationBody {
+    overflow: scroll;
+    height: 880px;
+ 
+}
+
+.ManagementBody {
+    overflow: scroll;
+    height: 880px;
+}
+
+
+.ManagementGuide {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 32px;
+    align-items: center;
+}
+
+.ManagementGuideIcon > span {
+    margin: 0 32px 0 4px;
+}
+
+.ManagementMap {
+    padding: 16px 32px;
+}
+
+.ManagementMap > iframe {
+    width: 100%;
+    height: 400px;
+}
