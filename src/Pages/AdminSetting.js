@@ -102,6 +102,10 @@ export default function AdminSetting(){
                                             variant="outlined">
                                             저 장
                                     </Button>
+                                    <Button style={{backgroundColor: '#ffffff' , borderRadius:'8px' , padding: '6px 32px' , marginLeft: '8px' , color: 'red' , borderColor: 'red'}} 
+                                            variant="outlined">
+                                            삭 제
+                                    </Button>
                                 </div>
                             </div>
                         </div>
