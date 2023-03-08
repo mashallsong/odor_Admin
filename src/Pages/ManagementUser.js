@@ -178,13 +178,13 @@ export default function Management(){
 
                                 </div>
                                 <div className="ManagementBtn">
-                                    <Button style={{backgroundColor: '#D5D5D5' , borderRadius:'8px' , padding: '6px 32px', marginRight: '8px' , border: 'none' , color:'white'}} 
+                                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 32px', marginRight: '8px' , border: 'none' , color:'white'}} 
                                             variant="outlined">
-                                            출력
+                                            출 력
                                     </Button>
                                     <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 32px', border: 'none' , color:'white'}} 
                                             variant="outlined">
-                                            저장
+                                            수 정
                                     </Button>
                                 </div>
                                 <div className="pagination">

@@ -96,17 +96,17 @@ export default function Management(){
 
                             </div>
                             <div className="ManagementBtn">
-                                <Button style={{backgroundColor: '#D5D5D5' , borderRadius:'8px' , padding: '6px 32px', marginRight: '8px' , border: 'none' , color:'white'}} 
+                                <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 32px', marginRight: '8px' , border: 'none' , color:'white'}} 
                                         variant="outlined">
                                         출 력
                                 </Button>
-                                <Button style={{backgroundColor: '#D5D5D5' , borderRadius:'8px' , padding: '6px 32px', marginRight: '8px' , border: 'none' , color:'white'}} 
+                                <Button style={{backgroundColor: 'white' , borderRadius:'8px' , padding: '6px 32px', marginRight: '8px' , color: 'red' , borderColor: 'red'}} 
                                         variant="outlined">
                                         삭 제
                                 </Button>
                                 <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 32px', border: 'none' , color:'white'}} 
                                         variant="outlined">
-                                        저 장
+                                        수 정
                                 </Button>
                             </div>
                             <div className="pagination">

@@ -13,12 +13,36 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 
+// Modal import
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
 
 /* 폰트어썸 import */
 import {faMagnifyingGlass, faWrench} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// Modal const
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 600,
+    bgcolor: 'background.paper',
+    borderRadius: '16px',
+    border: 'none',
+    boxShadow: 14,
+    p: 4,
+  };
+
 export default function Registration(){
+
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+  
+
     return (
         <div className="container">
             <div className="header-wrap">
@@ -98,6 +122,10 @@ export default function Registration(){
                                     Node Sensor
                                     </span>
                                     <input className="textInput5" type="text" placeholder="MOS-KR00004" />
+                                    <Button style={{backgroundColor: '#F5F6FF' , borderRadius:'8px' , padding: '12px 39px', border: 'none' , color:'#120C0E'}} 
+                                            variant="outlined">
+                                            + 추가
+                                    </Button>
                                 </div>
                             </div>
 
@@ -211,6 +239,26 @@ export default function Registration(){
                             <div className="textInputListFull">
                                 <span className="ListTitle">설치주소</span>                      
                                 <input className="textInput7" type="text" placeholder="주소를 입력하세요" />
+                                <Button style={{backgroundColor: '#F5F6FF' , borderRadius:'8px' , padding: '12px 32px', border: 'none' , color:'#120C0E'}} 
+                                        variant="outlined"
+                                        onClick={handleOpen}>
+                                        주소검색
+                                </Button>
+                                <Modal
+                                   open={open}
+                                   onClose={handleClose}
+                                   aria-labelledby="modal-modal-title"
+                                   aria-describedby="modal-modal-description" 
+                                >
+                                    <Box sx={style}>
+                                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                                        주소
+                                        </Typography>
+                                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                        주소 레이아웃 영역
+                                        </Typography>
+                                    </Box>
+                                </Modal>
                             </div>
                             <div className="textInputListFull">
                                 <span className="ListTitle">담당자</span>                      
