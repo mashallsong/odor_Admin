@@ -4,15 +4,38 @@ import '../Css/Body.css';
 
 import Button from '@mui/material/Button';
 
-
-
-
 /* 폰트어썸 import */
 import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// Modal import
+import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
+import Modal from '@mui/material/Modal';
+import CloseIcon from '@mui/icons-material/Close';
+
+// Modal const
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 600,
+    bgcolor: 'background.paper',
+    borderRadius: '16px',
+    border: 'none',
+    boxShadow: 14,
+    p: 4,
+  };
+
 export default function Management(){
+
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => setOpen(true);
+    const handleClose = () => setOpen(false);
+  
+
     return (
         <div className="container">
             <div className="header-wrap">
@@ -80,6 +103,29 @@ export default function Management(){
                                 <div className="textInputListFull">
                                     <span className="ListTitle">설치주소</span>                      
                                     <input className="textInput7" type="text" placeholder="설치주소를 입력하세요" />
+                                    <Button style={{backgroundColor: '#F5F6FF' , borderRadius:'8px' , padding: '12px 32px', border: 'none' , color:'#120C0E'}} 
+                                        variant="outlined"
+                                        onClick={handleOpen}>
+                                        주소검색
+                                    </Button>
+                                    <Modal
+                                        open={open}
+                                        onClose={handleClose}
+                                        aria-labelledby="modal-modal-title"
+                                        aria-describedby="modal-modal-description" 
+                                    >
+                                        <Box sx={style}>
+                                            <Typography className="modalCloseIcon">
+                                                <CloseIcon onClick={handleClose}/>
+                                            </Typography>
+                                            <Typography id="modal-modal-title" variant="h6" component="h2">
+                                            주소
+                                            </Typography>
+                                            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                            주소 레이아웃 영역
+                                            </Typography>
+                                        </Box>
+                                    </Modal>
                                 </div>
                                 <div className="textInputListFull">
                                     <span className="ListTitle">전화번호</span>                      
@@ -90,11 +136,15 @@ export default function Management(){
                                     <input className="textInput7" type="text" placeholder="휴대폰번호를 입력하세요" />
                                 </div>
                                 <div>
-                                <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 32px' , border: 'none' , color:'white' , fontSize: '16px'}} 
-                                        variant="outlined">
-                                        저 장
-                                </Button>
-                            </div>
+                                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 32px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                            variant="outlined">
+                                            저 장
+                                    </Button>
+                                    <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 16px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                                                variant="outlined">
+                                        취 소
+                                    </Button>
+                                </div>
                             </div>
                         </div>
 

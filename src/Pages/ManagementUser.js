@@ -16,6 +16,64 @@ import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+// Modal import
+import Box from '@mui/material/Box';
+import Modal from '@mui/material/Modal';
+import Typography from '@mui/material/Typography';
+import CloseIcon from '@mui/icons-material/Close';
+
+// Modal
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 1080,
+    bgcolor: 'background.paper',
+    borderRadius: '16px',
+    border: 'none',
+    boxShadow: 14,
+    p: 4,
+  };
+
+  function ChildModal() {
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => {
+      setOpen(true);
+    };
+    const handleClose = () => {
+      setOpen(false);
+    };
+  
+    return (
+      <React.Fragment>
+        <Button style={{backgroundColor: '#F5F6FF' , borderRadius:'8px' , padding: '12px 32px', border: 'none' , color:'#120C0E'}} 
+                variant="outlined"
+                onClick={handleOpen}>
+            주소검색
+        </Button>
+        <Modal
+          open={open}
+          onClose={handleClose}
+          aria-labelledby="child-modal-title"
+          aria-describedby="child-modal-description"
+        >
+        <Box sx={{ ...style, width: 600 }}>
+            <Typography className="modalCloseIcon">
+                <CloseIcon onClick={handleClose}/>
+            </Typography>
+            <Typography id="modal-modal-title" variant="h6" component="h2">
+                주소
+            </Typography>
+            <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                주소 레이아웃 영역
+            </Typography>
+        </Box>
+        </Modal>
+      </React.Fragment>
+    );
+  }  
+
 export default function Management(){
 
     const [PartNo, setList] = React.useState('');
@@ -25,6 +83,15 @@ export default function Management(){
     };
     
     const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
+
+    // Modal const
+    const [open, setOpen] = React.useState(false);
+    const handleOpen = () => {
+        setOpen(true);
+    };
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
         <div className="container">
@@ -183,9 +250,87 @@ export default function Management(){
                                             출 력
                                     </Button>
                                     <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 32px', border: 'none' , color:'white'}} 
-                                            variant="outlined">
+                                            variant="outlined"
+                                            onClick={handleOpen}
+                                            >
                                             수 정
                                     </Button>
+                                    <Modal
+                                        open={open}
+                                        onClose={handleClose}
+                                        aria-labelledby="parent-modal-title"
+                                        aria-describedby="parent-modal-description"
+                                    >
+                                    <Box sx={{ ...style, width: 1080 }}>
+                                        <Typography className="modalCloseIcon">
+                                            <CloseIcon onClick={handleClose}/>
+                                        </Typography>
+                                        <Typography id="modal-modal-title" variant="h6" component="h2">
+                                            장비 및 사용자 수정
+                                        </Typography>
+                                        <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                            <div className="ManagementBody">
+                                                <div className="ManagementGuide">
+                                                    <div className="ManagementGuideIcon">
+                                                        <FontAwesomeIcon icon={faLocationDot} style={{ color: '#75C03A' , fontSize: '26px' }} /> <span>온라인-정상동작</span>
+                                                        <FontAwesomeIcon icon={faLocationDot} style={{ color: '#DB2F18' , fontSize: '26px' }} /> <span>오프라인-점검필요</span>
+                                                        <FontAwesomeIcon icon={faLocationDot} style={{ color: '#F29729' , fontSize: '26px' }} /> <span>데이터 에러-통신오류</span>
+                                                    </div>
+                                                    <div>
+                                                        <input className="textInput8" type="text" placeholder="상호/ 장비 번호/ 아이디로 검색 " />
+                                                        <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: '#130C0E' , fontSize: '26px' }} />
+                                                    </div>
+                                                </div>
+                                                <div className="ManagementMap">
+                                                    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" 
+                                                            frameborder="0"
+                                                            id="inlineFrameExample"
+                                                            title="Inline Frame Example"
+                                                    />
+                                                </div>
+                                                <div>
+                                                    <div className="textInputListFull">
+                                                        <span className="ListTitle">상호</span>                      
+                                                        <input className="textInput7" type="text" placeholder="상호를 입력하세요" />
+                                                    </div>
+                                                    <div className="textInputListFull">
+                                                        <span className="ListTitle">아이디</span>                      
+                                                        <input className="textInput7" type="text" placeholder="아이드를 입력하세요" />
+                                                    </div>
+                                                    <div className="textInputListFull">
+                                                        <span className="ListTitle">담당자</span>                      
+                                                        <input className="textInput7" type="text" placeholder="담당자를 입력하세요" />
+                                                    </div>
+                                                    <div className="textInputListFull">
+                                                        <span className="ListTitle">설치주소</span>                      
+                                                        <input className="textInput7" type="text" placeholder="설치주소를 입력하세요" />
+                                                        <ChildModal />
+                                                    </div>
+                                                    <div className="textInputListFull">
+                                                        <span className="ListTitle">전화번호</span>                      
+                                                        <input className="textInput7" type="text" placeholder="전화번호를 입력하세요" />
+                                                    </div>
+                                                    <div className="textInputListFull">
+                                                        <span className="ListTitle">휴대폰 1</span>                      
+                                                        <input className="textInput7" type="text" placeholder="휴대폰번호를 입력하세요" />
+                                                    </div>
+                                                    <div>
+                                                        <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 32px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                                                variant="outlined">
+                                                                저 장
+                                                        </Button>
+                                                        <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 16px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                                                variant="outlined"
+                                                                onClick={handleClose}
+                                                                >
+                                                            취 소
+                                                        </Button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </Typography>                                 
+                                    </Box>
+                                </Modal>
                                 </div>
                                 <div className="pagination">
                                     <Pagination count={10} shape="rounded" />

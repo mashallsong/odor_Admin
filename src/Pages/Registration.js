@@ -17,6 +17,7 @@ import FormLabel from '@mui/material/FormLabel';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
+import CloseIcon from '@mui/icons-material/Close';
 
 /* 폰트어썸 import */
 import {faMagnifyingGlass, faWrench} from '@fortawesome/free-solid-svg-icons';
@@ -251,6 +252,9 @@ export default function Registration(){
                                    aria-describedby="modal-modal-description" 
                                 >
                                     <Box sx={style}>
+                                        <Typography className="modalCloseIcon">
+                                            <CloseIcon onClick={handleClose}/>
+                                        </Typography>
                                         <Typography id="modal-modal-title" variant="h6" component="h2">
                                         주소
                                         </Typography>
@@ -276,6 +280,10 @@ export default function Registration(){
                                 <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 32px' , border: 'none' , color:'white' , fontSize: '16px'}} 
                                         variant="outlined">
                                         장비등록
+                                </Button>
+                                <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 16px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                        variant="outlined">
+                                    취 소
                                 </Button>
                             </div>
 
