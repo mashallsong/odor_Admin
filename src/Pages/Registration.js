@@ -253,7 +253,7 @@ export default function Registration(){
                                 >
                                     <Box sx={style}>
                                         <Typography className="modalCloseIcon">
-                                            <CloseIcon onClick={handleClose}/>
+                                            <CloseIcon onClick={handleClose} />
                                         </Typography>
                                         <Typography id="modal-modal-title" variant="h6" component="h2">
                                         주소

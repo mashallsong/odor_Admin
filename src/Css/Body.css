@@ -528,6 +528,10 @@
     text-align: center;
 }
 
+.RegistrationUserTable ul .tbAddress {
+    width: 20%;
+}
+
 .RegistrationUserTd {
     height: 60px;
     display: flex;

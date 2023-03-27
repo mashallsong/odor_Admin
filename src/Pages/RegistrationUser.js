@@ -145,9 +145,9 @@ export default function Management(){
                                     <li>등록일</li>
                                     <li>상호</li>
                                     <li>아이디</li>
-                                    <li>비밀번호</li>
+                                    {/* <li>비밀번호</li> */}
                                     <li>전화번호</li>
-                                    <li>주소</li>
+                                    <li className="tbAddress">주소</li>
                                     <li>담당자</li>
                                     <li>핸드폰 번호</li>
                                 </ul>
@@ -162,9 +162,9 @@ export default function Management(){
                                     <li>2022/09/13</li>
                                     <li>온라인</li>
                                     <li className="textID">sguns0802@gmail.com</li>
-                                    <li>abc123</li>
+                                    {/* <li>abc123</li> */}
                                     <li>031-000-0000</li>
-                                    <li className="textAddress">경기도 시흥시 시흥대로 123번지 ...</li>
+                                    <li className="tbAddress">경기도 시흥시 시흥대로 123번지 ...</li>
                                     <li>홍길동</li>
                                     <li>010-0000-0000</li>
                                 </ul>
