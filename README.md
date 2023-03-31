@@ -17,7 +17,8 @@
     4. ManagementUser.js :
         - 출력,저장 버튼 > 출력,수정 버튼으로 변경
         - 수정하기 모달창 추가 * 수정 모달창안에 주소 찾기 모달창이 들어가야해서 모달 구조가 틀림* : 19-75, 87-94, 247-334 번줄
-
+    5. ManagementUser.js :
+        - 134번줄 추가 (grey mapPin 추가) 
 
 
 # Getting Started with Create React App

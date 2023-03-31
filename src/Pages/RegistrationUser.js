@@ -168,7 +168,6 @@ export default function Management(){
                                     <li>홍길동</li>
                                     <li>010-0000-0000</li>
                                 </ul>
-
                             </div>
                             <div className="ManagementBtn">
                                 <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '6px 32px', marginRight: '8px' , border: 'none' , color:'white'}} 

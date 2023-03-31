@@ -130,7 +130,9 @@ export default function Management(){
                                 <div className="ManagementGuideIcon">
                                     <FontAwesomeIcon icon={faLocationDot} style={{ color: '#75C03A' , fontSize: '26px' }} /> <span>온라인-정상동작</span>
                                     <FontAwesomeIcon icon={faLocationDot} style={{ color: '#DB2F18' , fontSize: '26px' }} /> <span>오프라인-점검필요</span>
-                                    <FontAwesomeIcon icon={faLocationDot} style={{ color: '#F29729' , fontSize: '26px' }} /> <span>데이터 에러-통신오류</span>                                    </div>
+                                    <FontAwesomeIcon icon={faLocationDot} style={{ color: '#F29729' , fontSize: '26px' }} /> <span>데이터 에러-통신오류</span>
+                                    <FontAwesomeIcon icon={faLocationDot} style={{ color: '#BABABA' , fontSize: '26px' }} /> <span>대기상태</span>                                      
+                                </div>
                                 <div>
                                     <input className="textInput8" type="text" placeholder="상호/ 장비 번호/ 아이디로 검색 " />
                                     <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: '#130C0E' , fontSize: '26px' }} />
