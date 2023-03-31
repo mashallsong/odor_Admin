@@ -9,6 +9,7 @@ import {faMagnifyingGlass} from '@fortawesome/free-solid-svg-icons';
 import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
+
 // Modal import
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
@@ -80,6 +81,35 @@ export default function Management(){
                                     <FontAwesomeIcon icon={faMagnifyingGlass} style={{ color: '#130C0E' , fontSize: '26px' }} />
                                 </div>
                             </div>
+
+                            {/* Start 지도 마커 레이어팝업 */}
+                            <div className="mapMarkerPopup">
+                                <div className="mapMarkerPopupLayer">
+                                    <div className="modalCloseIcon">
+                                        <CloseIcon />
+                                    </div>
+                                    <div>
+                                        <h2>Lx010003</h2>
+                                    </div>
+                                    <div className="markerText">
+                                        <FontAwesomeIcon icon={faLocationDot} style={{ color: '#75C03A' , fontSize: '14px' }} /> <span>온라인-정상동작</span>
+                                    </div>
+                                    <hr />
+                                    <div className="PopuptextareaId">
+                                        <div style={{color: '#787878'}}>Id : </div>
+                                        <div>Lx010003</div>
+                                    </div>
+                                    <div className="PopuptextareaLocation">
+                                        <div style={{color: '#787878'}}>Location : </div>
+                                        <div style={{fontSize: '12px', color: '#787878'}}>741 Naebaisan-dong, Gangseo=gu, Seoul, South Korea</div>
+                                    </div>
+                                    <div className="mapMarkerPopupBtn">
+                                        <p>세부정보표시</p>
+                                    </div>
+                                </div>
+                            </div>
+                            {/* End 지도 마커 레이어팝업 */}
+
                             <div className="ManagementMap">
                                 <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik" 
                                         frameborder="0"
@@ -89,7 +119,7 @@ export default function Management(){
                             </div>
                             <div>
                                 <div className="textInputListFull">
-                                    <span className="ListTitle">상호</span>                      
+                                    <span className="ListTitle">상호</span>                    
                                     <input className="textInput7" type="text" placeholder="상호를 입력하세요" />
                                 </div>
                                 <div className="textInputListFull">
