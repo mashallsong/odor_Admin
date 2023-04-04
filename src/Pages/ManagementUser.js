@@ -145,7 +145,46 @@ export default function Management(){
                                     title="Inline Frame Example"
                                     />
                             </div>
-                            
+
+                            {/* 2023.04.04 추가 start */}
+                            <div>
+                                <div className="textInputListFull">
+                                    <span className="ListTitle">상호</span>                    
+                                    <input className="textInput7" type="text" placeholder="상호를 입력하세요" />
+                                </div>
+                                <div className="textInputListFull">
+                                    <span className="ListTitle">아이디</span>                      
+                                    <input className="textInput7" type="text" placeholder="아이드를 입력하세요" />
+                                </div>
+                                <div className="textInputListFull">
+                                    <span className="ListTitle">담당자</span>                      
+                                    <input className="textInput7" type="text" placeholder="담당자를 입력하세요" />
+                                </div>
+                                <div className="textInputListFull">
+                                    <span className="ListTitle">설치주소</span>                      
+                                    <input className="textInput7" type="text" placeholder="설치주소를 입력하세요" />
+                                    <ChildModal />
+                                </div>
+                                <div className="textInputListFull">
+                                    <span className="ListTitle">전화번호</span>                      
+                                    <input className="textInput7" type="text" placeholder="전화번호를 입력하세요" />
+                                </div>
+                                <div className="textInputListFull">
+                                    <span className="ListTitle">휴대폰 1</span>                      
+                                    <input className="textInput7" type="text" placeholder="휴대폰번호를 입력하세요" />
+                                </div>
+                                <div>
+                                    <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 32px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                            variant="outlined">
+                                            저 장
+                                    </Button>
+                                    <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 16px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                                                variant="outlined">
+                                        취 소
+                                    </Button>
+                                </div>
+                            </div>
+                            {/* 2023.04.04 추가 end */}
                             <div className="ManagementUserBody">
                                 <div className="ManagementTable">
                                     <ul className="ManagementTableTh">

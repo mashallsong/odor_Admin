@@ -603,3 +603,23 @@
     padding: 12px;
     margin-top: 16px;
 }
+
+.PopuptextareaIdTitle {
+    color: #787878;
+    margin-bottom: 4px;
+}
+
+.PopuptextareaIdText {
+    font-size: 14px;
+    width: 168px;
+}
+
+.modalCloseIconImg {
+	display:inline-block;*display:inline;
+}
+
+.modalCloseIconImg:after {
+	display: inline-block;
+	content: "\00d7";
+	font-size:20pt;
+}

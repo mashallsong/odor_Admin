@@ -86,7 +86,7 @@ export default function Management(){
                             <div className="mapMarkerPopup">
                                 <div className="mapMarkerPopupLayer">
                                     <div className="modalCloseIcon">
-                                        <img src={CloseBtn} style={{ width: '16px', height: '16px', marginTop: '8px' }} alt="로고" />
+                                        <div className="modalCloseIconImg"></div>
                                     </div>
                                     <div>
                                         <h2>Lx010003</h2>
@@ -96,12 +96,12 @@ export default function Management(){
                                     </div>
                                     <hr />
                                     <div className="PopuptextareaId">
-                                        <div style={{color: '#787878', marginBottom: '4px'}}>Id : </div>
+                                        <div className="PopuptextareaIdTitle">Id : </div>
                                         <div>Lx010003</div>
                                     </div>
                                     <div className="PopuptextareaLocation">
-                                        <div style={{color: '#787878', marginBottom: '4px'}}>Location : </div>
-                                        <div style={{fontSize: '15px'}}>741 Naebaisan-dong, Gangseo=gu, Seoul, South Korea</div>
+                                        <div className="PopuptextareaIdTitle">Location : </div>
+                                        <div className="PopuptextareaIdText">741 Naebaisan-dong, Gangseo=gu, Seoul, South Korea</div>
                                     </div>
                                     <div className="mapMarkerPopupBtn">
                                         <p>세부정보표시</p>
