@@ -117,7 +117,75 @@ export default function Management(){
                                         title="Inline Frame Example"
                                 />
                             </div>
-                            <div>
+
+                            {/* 0405_장비 및 사용자 관리 리스트 레이아웃 수정_start */}
+                            <div className="listLayout_Usersetting">
+                                <div>
+                                    <div className="textInputListFull">
+                                        <span className="ListTitle">상호</span>                    
+                                        <input className="textInput7" type="text" placeholder="상호를 입력하세요" />
+                                    </div>
+                                    <div className="textInputListFull">
+                                        <span className="ListTitle">아이디</span>                      
+                                        <input className="textInput7" type="text" placeholder="아이드를 입력하세요" />
+                                    </div>
+                                    <div className="textInputListFull">
+                                        <span className="ListTitle">담당자</span>                      
+                                        <input className="textInput7" type="text" placeholder="담당자를 입력하세요" />
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className="textInputListFull">
+                                        <span className="ListTitle">설치주소</span>                      
+                                        <input className="textInputAD" type="text" placeholder="설치주소를 입력하세요" />
+                                        <Button style={{backgroundColor: '#F5F6FF' , borderRadius:'8px' , padding: '12px 32px', border: 'none' , color:'#120C0E'}} 
+                                            variant="outlined"
+                                            onClick={handleOpen}>
+                                            주소검색
+                                        </Button>
+                                        <Modal
+                                            open={open}
+                                            onClose={handleClose}
+                                            aria-labelledby="modal-modal-title"
+                                            aria-describedby="modal-modal-description" 
+                                        >
+                                            <Box sx={style}>
+                                                <Typography className="modalCloseIcon">
+                                                    <CloseIcon onClick={handleClose}/>
+                                                </Typography>
+                                                <Typography id="modal-modal-title" variant="h6" component="h2">
+                                                주소
+                                                </Typography>
+                                                <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+                                                주소 레이아웃 영역
+                                                </Typography>
+                                            </Box>
+                                        </Modal>
+                                    </div>
+                                    <div className="textInputListFull">
+                                        <span className="ListTitle">전화번호</span>                      
+                                        <input className="textInput7" type="text" placeholder="전화번호를 입력하세요" />
+                                    </div>
+                                    <div className="textInputListFull">
+                                        <span className="ListTitle">휴대폰 1</span>                      
+                                        <input className="textInput7" type="text" placeholder="휴대폰번호를 입력하세요" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="listBtn_Usersetting">
+                                <Button style={{backgroundColor: '#4e82eb' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 32px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                        variant="outlined">
+                                        저 장
+                                </Button>
+                                <Button style={{backgroundColor: '#DADADA' , borderRadius:'8px' , padding: '8px 80px' , margin: '32px 0 64px 16px' , border: 'none' , color:'white' , fontSize: '16px'}} 
+                                        variant="outlined">
+                                    취 소
+                                </Button>
+                            </div>
+                            {/* 0405_장비 및 사용자 관리 리스트 레이아웃 수정_end */}
+                            
+                            
+                            {/* <div>
                                 <div className="textInputListFull">
                                     <span className="ListTitle">상호</span>                    
                                     <input className="textInput7" type="text" placeholder="상호를 입력하세요" />
@@ -175,7 +243,7 @@ export default function Management(){
                                         취 소
                                     </Button>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
                     </div>

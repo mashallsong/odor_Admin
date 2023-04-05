@@ -21,7 +21,15 @@
         - 134번줄 추가 (grey mapPin 추가) 
 -  2023.04.04
     1. ManagementUser.js :
+        - 149번줄 부터 추가     
+
+-  2023.04.05
+    1. Management.js : 리스트 좌우 레이아웃 적용
+        - 121번줄 부터 추가   
+    2. ManagementUser.js : 리스트 좌우 레이아웃 적용
         - 149번줄 부터 추가
+    3. Body.css : 리스트 좌우 레이아웃 적용
+        - 627번줄 부터 추가
 
 
 # Getting Started with Create React App
